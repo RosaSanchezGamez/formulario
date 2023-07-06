@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valle Grande</title>
+    <link rel="ICON" href="/Logo-VG_Tpt02.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="texto_t">
+        <h1>Bienevenido</h1>
+        <h3>A Valle Grande</h3>
+    </div>
+    <div class="formulario_contenedor">
+        <div class="Contenedor_img_form">
+            <div class="contenedor_Imagen">
+                <img src="/Logo-VG_Tpt02.png" alt="logo de vallegrande">
+            </div>
+            <div class="fondo_del_formulario">
+                <div class="formulario">
+
+                    <form action="" class="formulario_contacto" id="formulario-contacto">
+                        <h3>Carrera Profesional</h3>
+                        <div class="form-group">
+                            <div>
+                              <input  type="radio" id="sistemas" name="carrera" value="Analisis de Sistema" checked>
+                              <label for="carrera">Analisis de Sistema</label>
+                            </div>
+                      
+                            <div>
+                              <input type="radio" id="agraria" name="carrera" value="Produccion Agraria">
+                              <label for="carrera">Produccion Agraria</label>
+                            </div>
+                          </div>
+
+                        <h3>Apellido Nombre</h3>
+                        <label for="">
+                            <input type="text" onkeypress="return soloLetras(event)"
+                             class="inputs" id="NOMBRE_APELLIDO" ></label>
+                        <h3>Numero de DNI</h3>
+                        <label for=""><input id="NUMERO_DNI" minlength="8" maxlength="8" onkeypress="return soloNumero(event)"
+                            class="inputs" type="text" ></label>
+                        <h3>Fecha de Nacimiento</h3>
+                        <label for=""><input id="FECHA_NACIMIENTO" class="inputs" type="date" ></label>
+                        <h3>Correo Institucional</h3>
+                        <label for=""><input id="CORREO_INSTITUCIONAL" class="inputs" type="text" ></label>
+                        
+                        <h3>Contraseña</h3>
+                        <div class="password-container">
+                            <input id="CONTRASEÑA" class="inputs" type="password" minlength="6" required>
+                        </div>
+                        
+                        <br><br>
+                        <label for=""><input  type="checkbox" >Aceptar los Terminos y Condiciones</label>
+                        <br>
+                        <br>
+                        <button class="Boton" name="submit" type="submit" onclick="validarPassword(document.formulario-contacto.CONTRASEÑA)" id="btnCrear"> Enviar</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="registro.js"></script>
+    <script src="validaciones.js"></script>
+   </body>
+
+</html>

@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+}
+
+body{
+ background: url(/IMG_7207.CR2.jpg) no-repeat;
+ background-size: cover;
+ color: white;
+ font-family: Arial, Helvetica, sans-serif;
+
+}
+.Contenedor_img_form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.formulario_contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.fondo_del_formulario{
+    background-color: rgba(5, 5, 5, 0.733);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+
+
+}
+.inputs{
+    width:100%;
+    border-radius: 10px;
+    height: 20px;
+    text-indent: 10px;
+}
+h3{
+    padding: 12px;
+}
+
+.formulario{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 30px;   
+
+}
+.contenedor_Imagen{
+    
+    padding-right: 150px;
+
+}
+
+.texto_t{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.548);
+}
+
+.Boton{
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-color: orange;
+    color: aliceblue;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+
+

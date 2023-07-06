@@ -1,0 +1,15 @@
+create database vallegrande;
+use vallegrande;
+create table formulario_vg
+(
+	ID int AUTO_INCREMENT,
+    CARRERA varchar(80),
+    NOMBRE_APELLIDO Varchar(20),
+    NUMERO_DNI char(8),
+    FECHA_NACIMIENTO varchar(20),
+    CORREO_INSTITUCIONAL varchar(90),
+    CONTRASEÑA varchar(18),
+    ACEPTAR varchar(5),
+     PRIMARY KEY (ID)
+);
+select * from formulario_vg;
